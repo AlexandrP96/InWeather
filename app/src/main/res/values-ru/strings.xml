@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">InWeather</string>
+    <string name="name_city">Город</string>
+
+    <string name="weather_type_cold">холодно</string>
+
+    <string name="button_add">+</string>
+    <string name="button_settings">S</string>
+    <string name="button_info">I</string>
 </resources>
