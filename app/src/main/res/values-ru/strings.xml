@@ -1,18 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">InWeather</string>
-    <string name="name_city">City</string>
+    <string name="name_city">Город</string>
 
-    <string name="weather_type_cold">cold</string>
+    <string name="weather_type_cold">холодно</string>
 
     <string name="button_add">+</string>
-    <string name="button_settings">S</string>
-    <string name="button_info">I</string>
-    <string name="button_search">search</string>
+    <string name="button_settings">Н</string>
+    <string name="button_info">И</string>
+    <string name="button_search">поиск</string>
 
     <string name="button_frag_filler">*</string>
 
     <string name="temperature_default">0</string>
     <string name="temperature_cel"> C</string>
     <string name="text_default" />
-
 </resources>
