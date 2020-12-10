@@ -7,9 +7,12 @@
     <string name="button_add">+</string>
     <string name="button_settings">S</string>
     <string name="button_info">I</string>
+    <string name="button_search">search</string>
 
     <string name="button_frag_filler">*</string>
 
     <string name="temperature_default">0</string>
     <string name="temperature_cel"> C</string>
+    <string name="text_default" />
+
 </resources>

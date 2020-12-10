@@ -41,14 +41,6 @@ public class MainActivity extends AppCompatActivity {
         return 10;
     }
 
-    // Так лучше не делать из за условий и множества кнопок
-    private View.OnClickListener listener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-
-        }
-    };
-
     public void onClick(View view) {
         Toast.makeText(this, "Переход", Toast.LENGTH_SHORT).show();
     }

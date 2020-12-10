@@ -8,9 +8,11 @@
     <string name="button_add">+</string>
     <string name="button_settings">Н</string>
     <string name="button_info">И</string>
+    <string name="button_search">поиск</string>
 
     <string name="button_frag_filler">*</string>
 
     <string name="temperature_default">0</string>
     <string name="temperature_cel"> C</string>
+    <string name="text_default" />
 </resources>
