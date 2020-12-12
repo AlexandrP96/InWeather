@@ -31,6 +31,15 @@
                 tools:ignore="UselessParent">
 
                 <TextView
+                    android:id="@+id/temp_pointer_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temp_pointer_plus"
+                    android:textColor="@color/color_text_white_theme"
+                    android:textSize="@dimen/size_text_large"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:id="@+id/main_weather_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -41,8 +50,9 @@
 
                 <TextView
                     android:id="@+id/temp_type_view"
-                    android:layout_width="wrap_content"
+                    android:layout_width="35dp"
                     android:layout_height="wrap_content"
+                    android:gravity="end"
                     android:text="@string/temperature_cel"
                     android:textColor="@color/color_text_white_theme"
                     android:textSize="@dimen/size_text_large"

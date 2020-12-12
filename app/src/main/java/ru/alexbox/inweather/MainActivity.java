@@ -22,17 +22,19 @@ public class MainActivity extends AppCompatActivity {
 
     private Button button_add;
 
-    private int weather;
-    private String city;
+    private int weather = 0;
+    private String city = "City";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        MainPresenter presenter = MainPresenter.getInstance();
+
         initView();
+        setData(city, weather = presenter.getWeather());
         onButtonAdd();
-        makeLog("On Start");
     }
 
     private void initView() {
@@ -42,11 +44,9 @@ public class MainActivity extends AppCompatActivity {
         makeLog("Вызван метод initView");
     }
 
-    @Override
-    protected void onResume() {
-        // Достаём приложение из бэкграунда
-        super.onResume();
-        makeLog("On Resume");
+    private void setData(String city, int weather) {
+        city_text_view.setText(city);
+        main_weather_view.setText(weather);
     }
 
     @Override
@@ -54,36 +54,25 @@ public class MainActivity extends AppCompatActivity {
         // Сохранение
         super.onSaveInstanceState(outState, outPersistentState);
 
-        outPersistentState.putInt(TEMP, weather);
-        outPersistentState.putString(CITY, city);
-        makeLog("Сохранение данных в onRestoreInstanceState");
+//        outPersistentState.putInt(TEMP, weather);
+//        outPersistentState.putString(CITY, city);
+//        makeLog("Сохранение данных в onRestoreInstanceState");
     }
 
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         // Восстановление
         super.onRestoreInstanceState(savedInstanceState);
-        Toast.makeText(this, "Восстановили", Toast.LENGTH_SHORT).show();
-        makeLog("Восстановление данных из onRestoreInstanceState");
-        weather = (int) savedInstanceState.get(TEMP);
-        city = (String) savedInstanceState.get(CITY);
-        setData(city, weather);
-    }
 
-
-    private void setData(String city, int weather) {
-        city_text_view.setText(city);
-        main_weather_view.setText("+" + weather + " ");
+//        weather = (int) savedInstanceState.get(TEMP);
+//        city = (String) savedInstanceState.get(CITY);
+//        setData(city, weather);
     }
 
     private void onButtonAdd() {
         button_add.setOnClickListener(v -> {
-
-            weather = 10;
             city = "Moscow";
-
             city_text_view.setText(city);
-            main_weather_view.setText("+" + weather + " ");
         });
     }
 
