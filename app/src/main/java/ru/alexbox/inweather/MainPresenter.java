@@ -4,7 +4,7 @@ package ru.alexbox.inweather;
 public final class MainPresenter {
 
     private static MainPresenter instance = null;
-    private int weather;
+    private final int weather;
 
     // Объект на который будут синхронизироваться потоки
     private static final Object syncObj = new Object();

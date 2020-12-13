@@ -15,4 +15,7 @@
     <string name="temperature_default">0</string>
     <string name="temperature_cel"> C</string>
     <string name="text_default" />
+
+    <string name="temp_pointer_plus">+</string>
+    <string name="temp_pointer_minus">-</string>
 </resources>
