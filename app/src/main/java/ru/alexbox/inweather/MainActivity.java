@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    // init commit
+
     private static final String INFO = "INFO_DEVELOPER";
 
     private TextView city_text_view;
