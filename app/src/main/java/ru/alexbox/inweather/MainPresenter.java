@@ -4,13 +4,14 @@ package ru.alexbox.inweather;
 public final class MainPresenter {
 
     private static MainPresenter instance = null;
-    private final int weather;
+    private String city;
+    private int weather;
 
     // Объект на который будут синхронизироваться потоки
     private static final Object syncObj = new Object();
 
     private MainPresenter() {
-        weather = 10;
+
     }
 
     public static MainPresenter getInstance() {
@@ -33,5 +34,17 @@ public final class MainPresenter {
 
     public int getWeather() {
         return weather;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public void setWeather(int w) {
+        this.weather = w;
     }
 }

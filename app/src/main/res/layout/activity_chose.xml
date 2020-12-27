@@ -21,7 +21,7 @@
         tools:ignore="Autofill,LabelFor" />
 
     <Button
-        android:id="@+id/chose_button"
+        android:id="@+id/button_chose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
