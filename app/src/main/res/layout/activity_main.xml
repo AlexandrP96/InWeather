@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".view.MainActivity" >
 
     <androidx.cardview.widget.CardView
         android:id="@+id/main_weather_card"
@@ -118,7 +118,7 @@
 
     <LinearLayout
         android:id="@+id/buttons_layout"
-        android:layout_width="350dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
@@ -128,32 +128,40 @@
         <Button
             android:id="@+id/button_add"
             style="@style/Widget.AppCompat.Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:drawable/ic_menu_add"
             android:text="@string/button_add" />
 
         <Button
             android:id="@+id/button_info"
             style="@style/Widget.AppCompat.Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:drawable/ic_menu_info_details"
             android:text="@string/button_info" />
+
+        <Button
+            android:id="@+id/button_favorite"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:drawable/star_off"
+            android:text="@string/button_add" />
 
         <Button
             android:id="@+id/button_settings"
             style="@style/Widget.AppCompat.Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:drawable/ic_menu_manage"
             android:text="@string/button_settings" />
     </LinearLayout>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/temp_weather_card"
         android:layout_width="350dp"
-        android:layout_height="200dp"
+        android:layout_height="300dp"
         android:layout_gravity="center"
         app:cardBackgroundColor="@color/color_card_white_theme">
 
@@ -161,35 +169,41 @@
 
     <LinearLayout
         android:id="@+id/buttons_frag_layout"
-        android:layout_width="350dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="10dp"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/button_frag_1"
             style="@style/Widget.AppCompat.Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:drawable/presence_invisible"
             android:text="@string/button_frag_filler" />
 
         <Button
             android:id="@+id/button_frag_2"
             style="@style/Widget.AppCompat.Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:drawable/presence_invisible"
             android:text="@string/button_frag_filler" />
 
         <Button
             android:id="@+id/button_frag_3"
             style="@style/Widget.AppCompat.Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:drawable/presence_invisible"
             android:text="@string/button_frag_filler" />
     </LinearLayout>
 

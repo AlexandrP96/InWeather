@@ -8,8 +8,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="color_header_app">#00227b</color>
 
     <color name="color_text_white_theme">#FF000000</color>
     <color name="color_card_white_theme">#E4E4E4</color>
+
+    <color name="color_buttons_white_theme">#3949ab</color>
+
+    <color name="color_button_activated">#76d275</color>
+    <color name="color_button_deactivated">#cfd8dc</color>
 
 </resources>

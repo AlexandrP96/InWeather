@@ -11,7 +11,6 @@ public final class MainPresenter {
     private static final Object syncObj = new Object();
 
     private MainPresenter() {
-
     }
 
     public static MainPresenter getInstance() {

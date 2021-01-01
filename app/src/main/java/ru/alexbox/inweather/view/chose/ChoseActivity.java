@@ -1,13 +1,19 @@
-package ru.alexbox.inweather;
+package ru.alexbox.inweather.view.chose;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.EditText;
 
-public class ChoseActivity extends AppCompatActivity {
+import ru.alexbox.inweather.IConstants;
+import ru.alexbox.inweather.MainPresenter;
+import ru.alexbox.inweather.R;
+
+public class ChoseActivity extends AppCompatActivity implements IConstants {
 
     private Button button_chose;
+    private EditText chose_edit_text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,12 +26,12 @@ public class ChoseActivity extends AppCompatActivity {
 
     private void initView() {
         button_chose = findViewById(R.id.button_chose);
+        chose_edit_text = findViewById(R.id.chose_edit_text);
     }
 
     private void initSearch() {
         button_chose.setOnClickListener(e -> {
-            
-
+            MainPresenter.getInstance().setCity(chose_edit_text.getText().toString());
             finish();
         });
     }
