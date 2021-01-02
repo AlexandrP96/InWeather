@@ -8,7 +8,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import ru.alexbox.inweather.MainPresenter;
+import ru.alexbox.inweather.presenter.MainPresenter;
 import ru.alexbox.inweather.R;
 
 public class BrowserActivity extends AppCompatActivity {

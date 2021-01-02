@@ -2,14 +2,13 @@ package ru.alexbox.inweather.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
 import ru.alexbox.inweather.IConstants;
-import ru.alexbox.inweather.MainPresenter;
+import ru.alexbox.inweather.presenter.MainPresenter;
 import ru.alexbox.inweather.R;
 import ru.alexbox.inweather.view.browser.BrowserActivity;
 import ru.alexbox.inweather.view.chose.ChoseActivity;
@@ -20,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements IConstants {
     private TextView main_weather_view;
 
     private Button button_add;
-    private Button button_info;
+//    private Button button_info;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +28,6 @@ public class MainActivity extends AppCompatActivity implements IConstants {
 
         initView();
         onButtonAdd();
-        onButtonInfo();
         onCityPress();
 
         MainPresenter.getInstance().setWeather(10);
@@ -49,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements IConstants {
         city_text_view = findViewById(R.id.city_text_view);
         main_weather_view = findViewById(R.id.main_weather_view);
         button_add = findViewById(R.id.button_add);
-        button_info = findViewById(R.id.button_info);
+//        button_info = findViewById(R.id.button_info);
     }
 
     private void setData(String city, String weather) {
@@ -70,9 +68,4 @@ public class MainActivity extends AppCompatActivity implements IConstants {
             startActivity(intent);
         });
     }
-
-    private void onButtonInfo() {
-        button_info.setOnClickListener(e -> city_text_view.setText("Moscow"));
-    }
-
 }

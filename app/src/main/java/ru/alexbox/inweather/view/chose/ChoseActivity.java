@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import ru.alexbox.inweather.IConstants;
-import ru.alexbox.inweather.MainPresenter;
+import ru.alexbox.inweather.presenter.MainPresenter;
 import ru.alexbox.inweather.R;
 
 public class ChoseActivity extends AppCompatActivity implements IConstants {

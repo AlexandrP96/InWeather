@@ -1,4 +1,4 @@
-package ru.alexbox.inweather;
+package ru.alexbox.inweather.presenter;
 
 // Singleton
 public final class MainPresenter {
