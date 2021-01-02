@@ -1,4 +1,4 @@
-package ru.alexbox.inweather.view;
+package ru.alexbox.inweather.view.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,7 @@ import ru.alexbox.inweather.presenter.MainPresenter;
 import ru.alexbox.inweather.R;
 import ru.alexbox.inweather.view.browser.BrowserActivity;
 import ru.alexbox.inweather.view.chose.ChoseActivity;
+import ru.alexbox.inweather.view.info.InfoFragment;
 
 public class MainActivity extends AppCompatActivity implements IConstants {
 
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements IConstants {
     private TextView main_weather_view;
 
     private Button button_add;
-//    private Button button_info;
+    private Button button_info;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements IConstants {
         initView();
         onButtonAdd();
         onCityPress();
+        initInfoFragment();
 
         MainPresenter.getInstance().setWeather(10);
 
@@ -47,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements IConstants {
         city_text_view = findViewById(R.id.city_text_view);
         main_weather_view = findViewById(R.id.main_weather_view);
         button_add = findViewById(R.id.button_add);
-//        button_info = findViewById(R.id.button_info);
+        button_info = findViewById(R.id.button_info);
     }
 
     private void setData(String city, String weather) {
@@ -66,6 +68,12 @@ public class MainActivity extends AppCompatActivity implements IConstants {
         city_text_view.setOnClickListener(e -> {
             Intent intent = new Intent(getApplicationContext(), BrowserActivity.class);
             startActivity(intent);
+        });
+    }
+
+    private void initInfoFragment() {
+        button_info.setOnClickListener(e -> {
+            InfoFragment infoFragment = new InfoFragment();
         });
     }
 }

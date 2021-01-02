@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.MainActivity" >
+    tools:context=".view.main.MainActivity" >
 
     <androidx.cardview.widget.CardView
         android:id="@+id/main_weather_card"
@@ -61,10 +61,9 @@
                         android:id="@+id/temp_type_view"
                         android:layout_width="35dp"
                         android:layout_height="wrap_content"
-                        android:gravity="end"
                         android:text="@string/temperature_cel"
                         android:textColor="@color/color_text_white_theme"
-                        android:textSize="@dimen/size_text_large"
+                        android:textSize="@dimen/size_text_medium"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -157,14 +156,12 @@
             android:text="@string/button_settings" />
     </LinearLayout>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/temp_weather_card"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_cont_main"
+        android:name="ru.alexbox.inweather.view.main.MainFragment"
         android:layout_width="350dp"
         android:layout_height="300dp"
-        android:layout_gravity="center"
-        app:cardBackgroundColor="@color/color_card_white_theme">
-
-    </androidx.cardview.widget.CardView>
+        android:layout_gravity="center" />
 
     <LinearLayout
         android:id="@+id/buttons_frag_layout"

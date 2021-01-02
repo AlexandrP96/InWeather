@@ -39,4 +39,10 @@ public class BrowserActivity extends AppCompatActivity {
         else
             super.onBackPressed();
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        finish();
+    }
 }

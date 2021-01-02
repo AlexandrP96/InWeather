@@ -15,8 +15,26 @@
 
     <string name="temperature_default">0</string>
     <string name="temperature_cel"> C</string>
+    <string name="temperature_far"> Ф</string>
+
     <string name="text_default" />
+
+    <string name="text_error">Ошибка</string>
+    <string name="text_success">Успешно</string>
 
     <string name="temp_pointer_plus">+</string>
     <string name="temp_pointer_minus">-</string>
+
+    <string name="frag_main_mon">Понедельник</string>
+    <string name="frag_main_tue">Вторник</string>
+    <string name="frag_main_wed">Среда</string>
+    <string name="frag_main_thu">Четверг</string>
+    <string name="frag_main_fri">Пятница</string>
+    <string name="frag_main_sat">Суббота</string>
+    <string name="frag_main_sun">Воскресенье</string>
+
+    <string name="frag_info_wind">Ветер</string>
+    <string name="frag_info_wet">Влажность</string>
+    <string name="frag_info_sunset">Закат</string>
+
 </resources>

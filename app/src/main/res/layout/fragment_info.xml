@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/info_frag_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_card_white_theme"
+    tools:context=".view.info.InfoFragment">
+
+    <TableRow
+        android:id="@+id/row_info_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/wind_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frag_info_wind"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+
+        <TextView
+            android:id="@+id/wind_info_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/temperature_default"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_info_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/wind_wet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frag_info_wet"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+
+        <TextView
+            android:id="@+id/wind_wet_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/temperature_default"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_info_three"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/sunset_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frag_info_sunset"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+
+        <TextView
+            android:id="@+id/sunset_info_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/temperature_default"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+    </TableRow>
+
+</TableLayout>
