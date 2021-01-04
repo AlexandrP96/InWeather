@@ -23,56 +23,7 @@
             android:textSize="@dimen/size_text_medium" />
 
         <LinearLayout
-            android:id="@+id/row_two_l"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/temp_poin_two_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/temp_pointer_plus"
-                android:textColor="@color/color_text_white_theme"
-                android:textSize="@dimen/size_text_medium" />
-
-            <TextView
-                android:id="@+id/temp_two_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/temperature_default"
-                android:textColor="@color/color_text_white_theme"
-                android:textSize="@dimen/size_text_medium" />
-
-            <TextView
-                android:id="@+id/temp_type_two_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/temperature_cel"
-                android:textColor="@color/color_text_white_theme"
-                android:textSize="@dimen/size_text_small" />
-        </LinearLayout>
-
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/row_two"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
-
-        <TextView
-            android:id="@+id/second_day_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/frag_main_tue"
-            android:textColor="@color/color_text_white_theme"
-            android:textSize="@dimen/size_text_medium" />
-
-        <LinearLayout
-            android:id="@+id/row_one_l"
+            android:id="@+id/row_one_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="30dp"
@@ -97,6 +48,55 @@
 
             <TextView
                 android:id="@+id/temp_type_one_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_cel"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_small" />
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/second_day_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frag_main_tue"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+
+        <LinearLayout
+            android:id="@+id/row_two_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/temp_poin_two_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temp_pointer_plus"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_medium" />
+
+            <TextView
+                android:id="@+id/temp_two_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_default"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_medium" />
+
+            <TextView
+                android:id="@+id/temp_type_two_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/temperature_cel"

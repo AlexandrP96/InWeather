@@ -43,6 +43,8 @@ public class BrowserActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        browser_view.clearCache(true);
+        browser_view.clearHistory();
         finish();
     }
 }

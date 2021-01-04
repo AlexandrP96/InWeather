@@ -16,6 +16,57 @@
 
 
         <TextView
+            android:id="@+id/min_temp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frag_info_min_temp"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+
+        <TextView
+            android:id="@+id/min_temp_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/temperature_default"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_info_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/max_temp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frag_info_max_temp"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+
+        <TextView
+            android:id="@+id/max_temp_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/temperature_default"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_info_three"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <TextView
             android:id="@+id/wind_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,14 +86,14 @@
     </TableRow>
 
     <TableRow
-        android:id="@+id/row_info_two"
+        android:id="@+id/row_info_four"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center">
 
 
         <TextView
-            android:id="@+id/wind_wet"
+            android:id="@+id/wet_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/frag_info_wet"
@@ -50,7 +101,7 @@
             android:textSize="@dimen/size_text_medium" />
 
         <TextView
-            android:id="@+id/wind_wet_view"
+            android:id="@+id/wet_view_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -61,7 +112,7 @@
     </TableRow>
 
     <TableRow
-        android:id="@+id/row_info_three"
+        android:id="@+id/row_info_five"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center">

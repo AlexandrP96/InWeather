@@ -21,6 +21,7 @@
 
     <string name="text_error">Ошибка</string>
     <string name="text_success">Успешно</string>
+    <string name="text_loading">Загрузка</string>
 
     <string name="temp_pointer_plus">+</string>
     <string name="temp_pointer_minus">-</string>
@@ -33,6 +34,8 @@
     <string name="frag_main_sat">Суббота</string>
     <string name="frag_main_sun">Воскресенье</string>
 
+    <string name="frag_info_min_temp">Мин</string>
+    <string name="frag_info_max_temp">Макс</string>
     <string name="frag_info_wind">Ветер</string>
     <string name="frag_info_wet">Влажность</string>
     <string name="frag_info_sunset">Закат</string>

@@ -19,6 +19,7 @@
 
     <string name="text_error">Error</string>
     <string name="text_success">Success</string>
+    <string name="text_loading">Loading</string>
 
     <string name="temp_pointer_plus">+</string>
     <string name="temp_pointer_minus">-</string>
@@ -31,6 +32,8 @@
     <string name="frag_main_sat">Saturday</string>
     <string name="frag_main_sun">Sunday</string>
 
+    <string name="frag_info_min_temp">Min</string>
+    <string name="frag_info_max_temp">Max</string>
     <string name="frag_info_wind">Wind</string>
     <string name="frag_info_wet">Wet</string>
     <string name="frag_info_sunset">Sunset</string>

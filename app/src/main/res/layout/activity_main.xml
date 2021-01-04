@@ -132,14 +132,6 @@
             android:text="@string/button_add" />
 
         <Button
-            android:id="@+id/button_info"
-            style="@style/Widget.AppCompat.Button"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@android:drawable/ic_menu_info_details"
-            android:text="@string/button_info" />
-
-        <Button
             android:id="@+id/button_favorite"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="40dp"
@@ -179,7 +171,7 @@
             android:layout_height="20dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:background="@android:drawable/presence_invisible"
+            android:background="@color/color_button_deactivated"
             android:text="@string/button_frag_filler" />
 
         <Button
@@ -189,7 +181,7 @@
             android:layout_height="20dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:background="@android:drawable/presence_invisible"
+            android:background="@color/color_button_deactivated"
             android:text="@string/button_frag_filler" />
 
         <Button
@@ -199,7 +191,7 @@
             android:layout_height="20dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:background="@android:drawable/presence_invisible"
+            android:background="@color/color_button_deactivated"
             android:text="@string/button_frag_filler" />
     </LinearLayout>
 
