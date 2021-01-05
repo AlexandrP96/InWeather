@@ -6,11 +6,10 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 
-import ru.alexbox.inweather.IConstants;
-import ru.alexbox.inweather.MainPresenter;
+import ru.alexbox.inweather.presenter.MainPresenter;
 import ru.alexbox.inweather.R;
 
-public class ChoseActivity extends AppCompatActivity implements IConstants {
+public class ChoseActivity extends AppCompatActivity {
 
     private Button button_chose;
     private EditText chose_edit_text;

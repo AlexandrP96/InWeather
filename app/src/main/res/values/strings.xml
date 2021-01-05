@@ -6,7 +6,9 @@
 
     <string name="button_add"> </string>
     <string name="button_settings"> </string>
-    <string name="button_info"> </string>
+    <string name="button_info">info</string>
+    <string name="button_days">days</string>
+    <string name="button_map">map</string>
     <string name="button_favorite"> </string>
     <string name="button_search">search</string>
 
@@ -14,8 +16,28 @@
 
     <string name="temperature_default">0</string>
     <string name="temperature_cel"> C</string>
+    <string name="temperature_far"> F</string>
     <string name="text_default" />
+
+    <string name="text_error">Error</string>
+    <string name="text_success">Success</string>
+    <string name="text_loading">Loading</string>
 
     <string name="temp_pointer_plus">+</string>
     <string name="temp_pointer_minus">-</string>
+
+    <string name="frag_main_mon">Monday</string>
+    <string name="frag_main_tue">Tuesday</string>
+    <string name="frag_main_wed">Wednesday</string>
+    <string name="frag_main_thu">Thursday</string>
+    <string name="frag_main_fri">Friday</string>
+    <string name="frag_main_sat">Saturday</string>
+    <string name="frag_main_sun">Sunday</string>
+
+    <string name="frag_info_min_temp">Min</string>
+    <string name="frag_info_max_temp">Max</string>
+    <string name="frag_info_wind">Wind</string>
+    <string name="frag_info_wet">Wet</string>
+    <string name="frag_info_sunset">Sunset</string>
+
 </resources>

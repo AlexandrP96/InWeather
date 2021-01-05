@@ -1,4 +1,4 @@
-package ru.alexbox.inweather;
+package ru.alexbox.inweather.presenter;
 
 // Singleton
 public final class MainPresenter {
@@ -33,6 +33,10 @@ public final class MainPresenter {
 
     public int getWeather() {
         return weather;
+    }
+
+    public String getWeatherString() {
+        return ((Integer) weather).toString();
     }
 
     public String getCity() {

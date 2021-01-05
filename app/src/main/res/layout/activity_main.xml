@@ -1,119 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.MainActivity" >
+    tools:context=".view.main.MainActivity" >
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/main_weather_card"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/main_weather_fragment"
+        android:name="ru.alexbox.inweather.view.main.MainFragment"
         android:layout_width="350dp"
         android:layout_height="260dp"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        app:cardBackgroundColor="@color/color_card_white_theme">
-
-        <LinearLayout
-            android:id="@+id/card_layout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:id="@+id/temp_pic_layout"
-                android:layout_width="330dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="10dp">
-
-                <LinearLayout
-                    android:id="@+id/temp_layout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="81dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:orientation="horizontal"
-                    tools:ignore="UselessParent">
-
-                    <TextView
-                        android:id="@+id/temp_pointer_view"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/temp_pointer_plus"
-                        android:textColor="@color/color_text_white_theme"
-                        android:textSize="@dimen/size_text_large"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/main_weather_view"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/temperature_default"
-                        android:textColor="@color/color_text_white_theme"
-                        android:textSize="@dimen/size_text_large"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/temp_type_view"
-                        android:layout_width="35dp"
-                        android:layout_height="wrap_content"
-                        android:gravity="end"
-                        android:text="@string/temperature_cel"
-                        android:textColor="@color/color_text_white_theme"
-                        android:textSize="@dimen/size_text_large"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-                <ImageView
-                    android:id="@+id/image_view_card"
-                    android:layout_width="94dp"
-                    android:layout_height="81dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    tools:ignore="ContentDescription"
-                    tools:srcCompat="@tools:sample/avatars" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/info_layout"
-                android:layout_width="330dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/weather_type_view"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:text="@string/weather_type_cold"
-                    android:textColor="@color/color_text_white_theme"
-                    android:textSize="@dimen/size_text_medium" />
-
-                <TextView
-                    android:id="@+id/city_text_view"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:text="@string/name_city"
-                    android:textColor="@color/color_text_white_theme"
-                    android:textSize="@dimen/size_text_medium_plus"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
+        android:layout_marginTop="30dp" />
 
     <LinearLayout
         android:id="@+id/buttons_layout"
@@ -133,14 +33,6 @@
             android:text="@string/button_add" />
 
         <Button
-            android:id="@+id/button_info"
-            style="@style/Widget.AppCompat.Button"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@android:drawable/ic_menu_info_details"
-            android:text="@string/button_info" />
-
-        <Button
             android:id="@+id/button_favorite"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="40dp"
@@ -157,53 +49,42 @@
             android:text="@string/button_settings" />
     </LinearLayout>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/temp_weather_card"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_cont_main"
+        android:name="ru.alexbox.inweather.view.main.DaysFragment"
         android:layout_width="350dp"
-        android:layout_height="300dp"
-        android:layout_gravity="center"
-        app:cardBackgroundColor="@color/color_card_white_theme">
-
-    </androidx.cardview.widget.CardView>
+        android:layout_height="290dp"
+        android:layout_gravity="center" />
 
     <LinearLayout
         android:id="@+id/buttons_frag_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/button_frag_1"
             style="@style/Widget.AppCompat.Button"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:background="@android:drawable/presence_invisible"
-            android:text="@string/button_frag_filler" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_info" />
 
         <Button
             android:id="@+id/button_frag_2"
             style="@style/Widget.AppCompat.Button"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:background="@android:drawable/presence_invisible"
-            android:text="@string/button_frag_filler" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_days" />
 
         <Button
             android:id="@+id/button_frag_3"
             style="@style/Widget.AppCompat.Button"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:background="@android:drawable/presence_invisible"
-            android:text="@string/button_frag_filler" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_map" />
     </LinearLayout>
 
 </LinearLayout>
