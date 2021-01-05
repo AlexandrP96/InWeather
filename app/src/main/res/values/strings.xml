@@ -6,7 +6,9 @@
 
     <string name="button_add"> </string>
     <string name="button_settings"> </string>
-    <string name="button_info"> </string>
+    <string name="button_info">info</string>
+    <string name="button_days">days</string>
+    <string name="button_map">map</string>
     <string name="button_favorite"> </string>
     <string name="button_search">search</string>
 

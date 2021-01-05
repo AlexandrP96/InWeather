@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/days_frag_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_card_white_theme"
+    tools:context=".view.main.DaysFragment">
+
+    <TableRow
+        android:id="@+id/row_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/first_day_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frag_main_mon"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+
+        <LinearLayout
+            android:id="@+id/row_one_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/temp_poin_one_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temp_pointer_plus"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_medium" />
+
+            <TextView
+                android:id="@+id/temp_one_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_default"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_medium" />
+
+            <TextView
+                android:id="@+id/temp_type_one_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_cel"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_small" />
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/second_day_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frag_main_tue"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+
+        <LinearLayout
+            android:id="@+id/row_two_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/temp_poin_two_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temp_pointer_plus"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_medium" />
+
+            <TextView
+                android:id="@+id/temp_two_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_default"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_medium" />
+
+            <TextView
+                android:id="@+id/temp_type_two_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_cel"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_small" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_three"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/third_day_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frag_main_wed"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+
+        <LinearLayout
+            android:id="@+id/row_three_l"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/temp_poin_three_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temp_pointer_plus"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_medium" />
+
+            <TextView
+                android:id="@+id/temp_three_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_default"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_medium" />
+
+            <TextView
+                android:id="@+id/temp_type_three_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_cel"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_small" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_four"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/fourth_day_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frag_main_thu"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+
+        <LinearLayout
+            android:id="@+id/row_four_l"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/temp_poin_four_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temp_pointer_plus"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_medium" />
+
+            <TextView
+                android:id="@+id/temp_four_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_default"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_medium" />
+
+            <TextView
+                android:id="@+id/temp_type_four_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_cel"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_small" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_five"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/fifth_day_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frag_main_fri"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+
+        <LinearLayout
+            android:id="@+id/row_five_l"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/temp_poin_five_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temp_pointer_plus"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_medium" />
+
+            <TextView
+                android:id="@+id/temp_five_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_default"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_medium" />
+
+            <TextView
+                android:id="@+id/temp_type_five_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_cel"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_small" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_six"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/six_day_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frag_main_sat"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+
+        <LinearLayout
+            android:id="@+id/row_six_l"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/temp_poin_six_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temp_pointer_plus"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_medium" />
+
+            <TextView
+                android:id="@+id/temp_six_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_default"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_medium" />
+
+            <TextView
+                android:id="@+id/temp_type_six_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_cel"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_small" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row_seven"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/seven_day_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frag_main_sun"
+            android:textColor="@color/color_text_white_theme"
+            android:textSize="@dimen/size_text_medium" />
+
+        <LinearLayout
+            android:id="@+id/row_seven_l"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/temp_poin_seven_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temp_pointer_plus"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_medium" />
+
+            <TextView
+                android:id="@+id/temp_seven_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_default"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_medium" />
+
+            <TextView
+                android:id="@+id/temp_type_seven_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature_cel"
+                android:textColor="@color/color_text_white_theme"
+                android:textSize="@dimen/size_text_small" />
+        </LinearLayout>
+    </TableRow>
+
+</TableLayout>

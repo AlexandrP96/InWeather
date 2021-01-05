@@ -1,8 +1,8 @@
 package ru.alexbox.inweather.view.main;
 
+import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
@@ -12,58 +12,61 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import ru.alexbox.inweather.R;
-import ru.alexbox.inweather.presenter.FragmentPresenter;
+import ru.alexbox.inweather.presenter.MainPresenter;
+import ru.alexbox.inweather.view.browser.BrowserActivity;
 
 public class MainFragment extends Fragment {
 
-    private TextView text_view_one;
-    private TextView text_view_two;
-    private TextView text_view_three;
-    private TextView text_view_four;
-    private TextView text_view_five;
-    private TextView text_view_six;
-    private TextView text_view_seven;
+    private TextView city_text_view;
+    private TextView main_weather_view;
 
     public MainFragment() {
+
+    }
+
+    public static MainFragment newInstance() {
+        MainFragment fragment = new MainFragment();
+        Bundle args = new Bundle();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View layout = inflater.inflate(R.layout.fragment_main, container, false);
-        text_view_one = layout.findViewById(R.id.temp_one_view);
-        text_view_two = layout.findViewById(R.id.temp_two_view);
-        text_view_three = layout.findViewById(R.id.temp_three_view);
-        text_view_four = layout.findViewById(R.id.temp_four_view);
-        text_view_five = layout.findViewById(R.id.temp_five_view);
-        text_view_six = layout.findViewById(R.id.temp_six_view);
-        text_view_seven = layout.findViewById(R.id.temp_seven_view);
-        return layout;
-    }
-
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+        View view = inflater.inflate(R.layout.fragment_main, container, false);
+        city_text_view = view.findViewById(R.id.city_text_view);
+        main_weather_view = view.findViewById(R.id.main_weather_view);
+        return view;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         setData();
+        onCityPress();
     }
 
-    public static MainFragment getInstance() {
-        return new MainFragment();
+    @Override
+    public void onResume() {
+        super.onResume();
+        setData();
     }
 
-    public void setData() {
-        // Заменить эту бодягю на цикл!
-        text_view_one.setText(FragmentPresenter.getInstance().getData());
-        text_view_two.setText(FragmentPresenter.getInstance().getData());
-        text_view_three.setText(FragmentPresenter.getInstance().getData());
-        text_view_four.setText(FragmentPresenter.getInstance().getData());
-        text_view_five.setText(FragmentPresenter.getInstance().getData());
-        text_view_six.setText(FragmentPresenter.getInstance().getData());
-        text_view_seven.setText(FragmentPresenter.getInstance().getData());
+    private void setData() {
+        city_text_view.setText(MainPresenter.getInstance().getCity());
+        main_weather_view.setText(MainPresenter.getInstance().getWeatherString());
+    }
+
+    private void onCityPress() {
+        if (city_text_view != null) city_text_view.setOnClickListener(e -> {
+            Intent intent = new Intent(getContext(), BrowserActivity.class);
+            startActivity(intent);
+        });
     }
 }

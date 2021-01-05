@@ -35,6 +35,10 @@ public final class MainPresenter {
         return weather;
     }
 
+    public String getWeatherString() {
+        return ((Integer) weather).toString();
+    }
+
     public String getCity() {
         return city;
     }
